@@ -42,7 +42,8 @@ CREATE TABLE favorites (
 
 CREATE TABLE comments (
     id int NOT NULL AUTO_INCREMENT,
-    userId varchar(10) NOT NULL,
-    vidoeId varchar(10) NOT NULL,
+    text varchar(255) NOT NULL,
+    userId int NOT NULL,
+    videoId int NOT NULL,
     PRIMARY KEY (id)
 );
