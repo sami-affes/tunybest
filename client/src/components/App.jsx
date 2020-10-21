@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import Home from './Home.jsx';
+import Login from './Login.jsx';
+import SignIn from './SignIn.jsx';
 class App extends Component {
     constructor(props) {
         super(props);
@@ -10,7 +12,9 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1>heloooooooo</h1>
+                <Home />
+                <Login />
+                <SignIn />
             </div>
         );
     }
