@@ -19,6 +19,26 @@ INSERT INTO users (firstName,lastName, email, password, phone, address) VALUES (
 INSERT INTO users (firstName,lastName, email, password, phone, address) VALUES ('talel', 'elGhali','talelElGhali@gmail.com','123456','52570599','rue maroc');
 INSERT INTO users (firstName,lastName, email, password, phone, address) VALUES ('sami', 'affes','samiAffes@gmail.com','123','20301202','route gremda km4');
 
+CREATE TABLE videos (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(25) NOT NULL,
+    category VARCHAR(25) NOT NULL,
+    genre VARCHAR(25) NOT NULL ,
+    property VARCHAR(25) NOT NULL ,
+    urlImage VARCHAR(25) NOT NULL ,
+    urlTrailor VARCHAR(25) NOT NULL,
+    urlVideo VARCHAR(25) NOT NULL,
+    counterVue INT NOT NULL,
+    likeCounter INT NOT NULL,
+    dislikeCounter INT NOT NULL,
+    PRIMARY KEY (id)
+);
+CREATE TABLE favorites (
+    id INT NOT NULL AUTO_INCREMENT,
+    userId INT NOT NULL,
+    videoId INT NOT NULL,
+    PRIMARY KEY (id)
+);
 
 CREATE TABLE comments (
     id int NOT NULL AUTO_INCREMENT,
