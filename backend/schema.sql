@@ -24,10 +24,10 @@ CREATE TABLE videos (
     name VARCHAR(25) NOT NULL,
     category VARCHAR(25) NOT NULL,
     genre VARCHAR(25) NOT NULL ,
-    property VARCHAR(100) NOT NULL ,
-    urlImage VARCHAR(100) NOT NULL ,
-    urlTrailor VARCHAR(100) NOT NULL,
-    urlVideo VARCHAR(100) NOT NULL,
+    property VARCHAR(5000) NOT NULL ,
+    urlImage VARCHAR(2000) NOT NULL ,
+    urlTrailor VARCHAR(2000) NOT NULL,
+    urlVideo VARCHAR(2000) NOT NULL,
     counterVue INT NOT NULL,
     likeCounter INT NOT NULL,
     dislikeCounter INT NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE favorites (
 
 CREATE TABLE comments (
     id int NOT NULL AUTO_INCREMENT,
-    text varchar(255) NOT NULL,
+    text varchar(2000) NOT NULL,
     userId int NOT NULL,
     videoId int NOT NULL,
     PRIMARY KEY (id)
