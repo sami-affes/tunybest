@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS tunyBest;
+DROP DATABASE IF EXISTS tunybest;
 
-CREATE DATABASE tunyBest;
+CREATE DATABASE tunybest;
 
-USE tunyBest;
+USE tunybest;
 
 CREATE TABLE users (
   id int NOT NULL AUTO_INCREMENT,
@@ -24,10 +24,10 @@ CREATE TABLE videos (
     name VARCHAR(25) NOT NULL,
     category VARCHAR(25) NOT NULL,
     genre VARCHAR(25) NOT NULL ,
-    property VARCHAR(25) NOT NULL ,
-    urlImage VARCHAR(25) NOT NULL ,
-    urlTrailor VARCHAR(25) NOT NULL,
-    urlVideo VARCHAR(25) NOT NULL,
+    property VARCHAR(100) NOT NULL ,
+    urlImage VARCHAR(100) NOT NULL ,
+    urlTrailor VARCHAR(100) NOT NULL,
+    urlVideo VARCHAR(100) NOT NULL,
     counterVue INT NOT NULL,
     likeCounter INT NOT NULL,
     dislikeCounter INT NOT NULL,
